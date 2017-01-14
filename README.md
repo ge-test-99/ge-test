@@ -22,6 +22,7 @@ Make sure selenium standalone is launched before test, with chromedriver/geckodr
 ```
 $ java -jar selenium-server-standalone-3.0.1.jar
 ```
+Export environment variables SELENIUM_URI and SELENIUM_BROWSER to override default values "http://127.0.0.1:4444/wd/hub" and "chrome"
 
 #####Testing:
 ```

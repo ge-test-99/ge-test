@@ -24,6 +24,14 @@ public class SearchResultsTrainPage extends SeleniumPageBase{
         path = "/train";
     }
 
+    @Override
+    public boolean at() {
+        WebDriverWait wait = new WebDriverWait(driver, 5);
+        wait.until(ExpectedConditions.numberOfElementsToBe(
+                By.xpath("//span[@data-key='dw.header.travelSearch']"), 1));
+        return this.driver.getCurrentUrl().endsWith(path);
+    }
+
     public void sortByPrice(){
 
         WebDriverWait wait = new WebDriverWait(driver, 5);
