@@ -18,7 +18,7 @@
     
 ### Running Tests
 
-Make sure selenium standalone is leunched before test:
+Make sure selenium standalone is launched before test, with chromedriver/geckodriver available:
 ```
 $ java -jar selenium-server-standalone-3.0.1.jar
 ```
